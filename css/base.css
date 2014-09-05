@@ -1,12 +1,1 @@
-/* --------------------------------------------------------
-Import Basic Files
--------------------------------------------------------- */
-
-@import url("normalize.css");				/* CSS Resets */
-@import url("layout.css");					/* Main Styles */
-@import url("shortcodes.css");				/* Shortcodes */
-@import url("grid.css");					/* Twitter Bootstrap Grid */
-@import url("isotope.css");        			/* Isotope for Portfolio */
-@import url("jquery.fancybox.css");        	/* Fancybox */
-@import url("flexslider.css");    			/* Flexslider 2 */
-@import url("mediaqueries.css");    		/* Media Queries */
+@import url(normalize.css);@import url(layout.css);@import url(shortcodes.css);@import url(grid.css);@import url(isotope.css);@import url(jquery.fancybox.css);@import url(flexslider.css);@import url(mediaqueries.css);
