@@ -957,6 +957,19 @@
 		border: none;
 	}
 	
+    /* Footer ----------------------------------------- */
+
+    .trigger li {
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+    .trigger li a {
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
 	
 	/* Other ------------------------------------------ */
 	
