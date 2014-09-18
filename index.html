@@ -22,6 +22,32 @@
 	================================================== -->
 	<link rel="shortcut icon" href="img/favicon.ico">
 	
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1JmI0sQtdwUYM4CvpQYCFtiS3rHiTlbU&sensor=false"></script>
+
+    <script>
+    var myCenter=new google.maps.LatLng(48.85608,8.6625,17);
+
+    function initialize()
+    {
+    var mapProp = {
+      center:myCenter,
+      zoom:16,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+    var marker=new google.maps.Marker({
+      position:myCenter,
+      title:"Hello World"
+      });
+
+    marker.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    
 </head>
 
 <body>
@@ -157,9 +183,10 @@
 							<div class="parallax-title">
                                 <h2>Mit viel Gespür für die Bedürfnisse unserer Kunden sowie einem ganzheitlichen Ansatz aus Consulting, Technologie und Application Management arbeiten wir an E-Business-Projekten die begeistern</h2>
                             </div>
-					</div>
-				</div>
-			</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</section>
 		<!-- End Parallax -->
 		
@@ -240,7 +267,7 @@ Als Geschäftsführer und Data Scientist bei Commerce Experts verantwortet er da
 						<div class="lead">Wir freuen uns über Ihren Anruf oder eine Nachricht an uns.</div>
 						<div class="row">
 							<div class="span8">
-								<iframe width="100%" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2625.1117187073914!2d8.6625!3d48.85608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47976dbdc1f10041%3A0x802c54e8d0183324!2sSchulerstra%C3%9Fe+2%2C+75180+Pforzheim!5e0!3m2!1sde!2sde!4v1407489427348"></iframe>    
+								<div id="googleMap" style="width:100%;height:380px;"></div>    
 							</div>
 							<div class="span4 address">
 								<div class="contact-name">Commerce Experts UG (haftungsbeschränkt)</div>
