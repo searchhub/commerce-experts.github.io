@@ -42,7 +42,7 @@
 	
 	a { color: #f84545;
 		text-decoration: none;
-		border-bottom: 1px solid #f84545; 
+		/* border-bottom: 1px solid #f84545; */
 		-webkit-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
 		   -moz-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
 		    -ms-transition: color 0.1s linear, border 0.1s linear, opacity 0.1s linear, background-color 0.1s linear;
