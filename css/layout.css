@@ -966,9 +966,10 @@
 	
     /* Footer ----------------------------------------- */
 
-    .trigger li {
+    span.trigger {
         font-size: 14px;
         letter-spacing: 1px;
+        padding-bottom: 6px;
         text-decoration: none;
     }
 
