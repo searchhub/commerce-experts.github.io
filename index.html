@@ -23,30 +23,34 @@
 	================================================== -->
 	<link rel="shortcut icon" href="img/favicon.ico">
 	
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1JmI0sQtdwUYM4CvpQYCFtiS3rHiTlbU&amp;ampsensor=false"></script>
-
-    <script>
-    var myCenter=new google.maps.LatLng(48.85608,8.6625,17);
-
-    function initialize()
-    {
-    var mapProp = {
-      center:myCenter,
-      zoom:16,
-      mapTypeId:google.maps.MapTypeId.ROADMAP
-      };
+    <!-- Goolge Maps
+	================================================== -->    
+    <script>    
+    function initialize() {
+        var myLatlng = new google.maps.LatLng(48.85608,8.6625,17);
+        var mapProp = {      
+          zoom:16,
+          mapTypeId:google.maps.MapTypeId.ROADMAP,
+          center:myLatlng
+        };
 
     var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
+            
     var marker=new google.maps.Marker({
-      position:myCenter,
-      title:"Hello World"
+      position:myLatlng,      
       });
-
     marker.setMap(map);
     }
 
-    google.maps.event.addDomListener(window, 'load', initialize);
+    function loadScript() {
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +
+          'callback=initialize';
+      document.body.appendChild(script);
+    }
+
+    window.onload = loadScript;        
     </script>
     
 </head>
